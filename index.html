@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mezclador de Cartas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <h1>Mezclador de Cartas</h1>
+
+    <!-- Botón para Crear Mazo -->
+    <button id="crearMazoBtn">Crear Mazo</button>
+
+    <!-- Contenedor para carga de imágenes -->
+    <div id="cargaImagenes" style="display: none;">
+      <h2>Cargar Imágenes</h2>
+      <input type="file" id="imagenInput" accept="image/*" multiple>
+      <p>Puedes seleccionar múltiples imágenes para cargar como cartas.</p>
+    </div>
+
+    <!-- Contenedor de vista previa del mazo generado -->
+    <div id="mazo" style="display: none;">
+      <h2>Mazo de Cartas</h2>
+      <div id="vistaPrevia"></div>
+      <button id="mezclarBtn">Mezclar Mazo</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
